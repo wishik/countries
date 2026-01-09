@@ -1,0 +1,68 @@
+.country {
+  border: var(--border-root-thickness) solid black;
+  border-radius: 1.5rem;
+  padding: 4rem 5rem;
+
+  display: grid;
+  align-content: center;
+  transition: all 0.2s ease;
+
+  animation: border-multicolor infinite 5s ease-out;
+}
+.country .animation-0 {
+  animation-delay: 0s;
+}
+.country .animation-1 {
+  animation-delay: 1.5s;
+}
+.country .animation-2 {
+  animation-delay: 3s;
+}
+.country:hover {
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+
+  animation: border-multicolor-hover infinite 5s ease-out;
+}
+.country__flag-url {
+  height: 20rem;
+  justify-self: start;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+}
+.country__name {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.country__capital {
+  font-size: 2rem;
+}
+
+@keyframes border-multicolor {
+  0% {
+    border: var(--border-root-thickness) solid rgb(0, 0, 0);
+  }
+
+  50% {
+    border: var(--border-root-thickness) solid rgb(190, 0, 44);
+  }
+
+  100% {
+    border: var(--border-root-thickness) solid rgb(0, 0, 0);
+  }
+}
+
+@keyframes border-multicolor-hover {
+  0% {
+    border: var(--border-root-thickness-hover) solid rgb(0, 0, 0);
+  }
+
+  50% {
+    border: var(--border-root-thickness-hover) solid rgb(190, 0, 44);
+  }
+
+  100% {
+    border: var(--border-root-thickness-hover) solid rgb(0, 0, 0);
+  }
+}

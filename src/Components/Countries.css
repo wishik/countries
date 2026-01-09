@@ -1,0 +1,7 @@
+.countries {
+  /* max-width: 144rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8rem;
+  margin-top: 20rem;
+}
